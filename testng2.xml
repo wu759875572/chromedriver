@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="百度搜索">
+    <test name="搜索业务">
+        <classes>
+            <class name="com.test4.NewTest"></class>
+            <class name="com.test4.MyTestNG"></class>
+        </classes>
+        
+        <listeners>
+<!-- 这是你需要加的东西 -->
+<listener class-name="org.uncommons.reportng.HTMLReporter" />
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+    </test>
+</suite>
